@@ -1,0 +1,8 @@
+
+# Glossary #
+
+TODO: rework
+account - The account is the entity where the money comes from or goes to. For example "Food", "Salary" or "Bike". If double accounting would be a big closet, each drawer represents one account. In Ledger, accounts can be structured hierarchally ("Expenses:Food:Groceries")
+posting - An account & and it's amount in a given transaction. Each transaction has at least two postings.
+
+\newpage
