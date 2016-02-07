@@ -2,6 +2,10 @@
 
 *Getting Started With Ledger* is an introductory book for the excellent command line accounting tool [Ledger](http://ledger-cli.org/).
 
+## Get the book
+
+Go the the [Releases](https://github.com/rolfschr/GSWL-book/releases) page and download the PDF file.
+
 ## Get the latest version
 
 ```bash
