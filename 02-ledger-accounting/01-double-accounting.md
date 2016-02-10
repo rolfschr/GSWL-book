@@ -189,6 +189,11 @@ $ # Usage: ledger -f <journal-file> [...]
 $ ledger -f journal.txt balance
 $ ledger -f journal.txt balance Groceries
 $ ledger -f journal.txt register
+
+# Start an interactive session
+# and type "balance", then  press Enter
+# (press ctrl+d to quit)
+$ ledger -f journal.txt
 ~~~
 
 This should give you a first feeling for Ledger.
