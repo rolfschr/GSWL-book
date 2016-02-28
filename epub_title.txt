@@ -1,0 +1,6 @@
+---
+  title: Getting Started With Ledger
+  author: Rolf Schröder & others
+  rights: Copyright (c) 2015 Rolf Schröder (MIT License)
+  language: en-US
+---
