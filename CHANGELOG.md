@@ -1,3 +1,8 @@
+
+## vXXX ##
+
+- Allow to generate epub version
+
 ## v1.0.1 ##
 
 - Minor improvements (text & examples)
