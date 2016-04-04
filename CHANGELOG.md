@@ -2,6 +2,7 @@
 ## vXXX ##
 
 - Allow to generate epub version
+- Fixed typos
 
 ## v1.0.1 ##
 
