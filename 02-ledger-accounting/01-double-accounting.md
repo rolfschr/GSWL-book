@@ -34,7 +34,7 @@ The level of detail needed for the subcategories ("Expenses" -> "Groceries" -> "
 
 ## Ledger ##
 
-[Ledger](http://ledger-cli.org) is a double-entry accounting command line tool originally authored by [John Wiegley](http://newartisans.com/).
+[Ledger](http://ledger-cli.org) is a double-entry accounting command line tool a command line tool created by [John Wiegley](http://newartisans.com/) with a community of active contributors.
 It is an extremely potent tool and it takes some time and effort to be able to unleash its power.
 However, once mastered there is not much you may miss while doing personal or professional accounting.
 
