@@ -134,7 +134,7 @@ Optional but recommended:
 * [tmuxinator](https://github.com/tmuxinator/tmuxinator) 
 * [gnuplot](http://www.gnuplot.info/)
 
-### Linux, Mac OS X & BSD ###
+### Linux & BSD ###
 
 You'll find what you need at the [download site](http://ledger-cli.org/download.html).
 
@@ -150,6 +150,14 @@ $ sudo yum install ledger
 However, the distribution's package might be older than the one provided at the download site.
 Ledger comes with a very good installation documentation.
 Refer to the [Github page](https://github.com/ledger/ledger) for more details.
+
+### macOS / OS X / Mac OS X ###
+
+The easiest way to install Ledger on a Mac is with [Homebrew](https://brew.sh/). Install Homebrew using its current recommended method and then install Ledger with a simple command:
+
+```{.bash}
+$ brew install ledger
+```
 
 ### Windows ###
 
