@@ -14,16 +14,19 @@ PANDOC_SYNTAX_HIGHLIGHT=--highlight-style=zenburn # --no-highlight
 GITSHA:=$(shell git rev-parse --short HEAD)
 TMP_DIR=./tmp
 TMP_BEFORE_TEX=$(TMP_DIR)/before.tex
+TMP_EPUB_TITLE=$(TMP_DIR)/epub_title.txt
 PANDOC_ARGS= --number-sections $(PANDOC_LATEX_ARGS) --toc $(PANDOC_SYNTAX_HIGHLIGHT) -V gitsha=$(GITSHA) #-V title="Getting Started With Ledger"
 PANDOC_PDF_ARGS= --include-before $(TMP_BEFORE_TEX)
-PANDOC_EPUB_ARGS= epub_title.txt
+PANDOC_EPUB_ARGS= $(TMP_EPUB_TITLE)
 
 all: pdf epub slices
 
-pre:
+pre: before.tex epub_title.txt
 	mkdir -p $(TMP_DIR)
 	cp before.tex $(TMP_BEFORE_TEX)
 	sed -i -e s'/\$$GITSHA\$$/$(GITSHA)/g' $(TMP_BEFORE_TEX)
+	cp epub_title.txt $(TMP_EPUB_TITLE)
+	sed -i -e s'/\$$GITSHA\$$/$(GITSHA)/g' $(TMP_EPUB_TITLE)
 
 md: pre
 	@find *-* -name '*.md' | xargs cat > $(OUTPUT_MD)
@@ -32,7 +35,7 @@ md: pre
 pdf: md
 	$(PANDOC_EXEC) $(OUTPUT_MD) $(PANDOC_ARGS) $(PANDOC_PDF_ARGS) -o $(OUTPUT_PDF)
 
-epub: md epub_title.txt
+epub: md
 	$(PANDOC_EXEC) $(PANDOC_ARGS) $(PANDOC_EPUB_ARGS) $(OUTPUT_MD) -t epub3 -o $(OUTPUT_EPUB)
 
 latex: md
