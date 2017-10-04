@@ -17,6 +17,8 @@ PANDOC_ARGS= --number-sections $(PANDOC_LATEX_ARGS) --toc $(PANDOC_SYNTAX_HIGHLI
 PANDOC_PDF_ARGS= --include-before $(TMP_BEFORE_TEX)
 PANDOC_EPUB_ARGS= epub_title.txt
 
+all: pdf epub slices
+
 pre:
 	@cp before.tex $(TMP_BEFORE_TEX)
 	@sed -i -e s'/\$$GITSHA\$$/$(GITSHA)/g' $(TMP_BEFORE_TEX)
