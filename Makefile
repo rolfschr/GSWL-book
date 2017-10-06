@@ -23,7 +23,7 @@ PANDOC_PDF_ARGS= --include-before $(TMP_BEFORE_TEX)
 PANDOC_HTML_ARGS= --include-before $(TMP_HTML_HEADER) --standalone
 PANDOC_EPUB_ARGS= $(TMP_EPUB_TITLE)
 
-all: pdf epub slices
+all: pdf epub slices html
 
 pre: before.tex epub_title.txt html_header.html
 	mkdir -p $(TMP_DIR)
