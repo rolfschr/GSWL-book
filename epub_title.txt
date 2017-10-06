@@ -2,6 +2,6 @@
   title: Getting Started With Ledger
   author: Rolf Schröder & Contributors
   rights: Copyright (c) 2015 Rolf Schröder (MIT License)
-  version: $GITSHA$
+  version: $TODAY$ $GITSHA$
   language: en-US
 ---
