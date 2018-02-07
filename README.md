@@ -15,6 +15,8 @@ The book covers:
 
 Go the the [Releases](https://github.com/rolfschr/GSWL-book/releases) page and download the PDF file.
 
+You can also browse the latest version on [GitHub](https://rolfschr.github.io/gswl-book/latest.html).
+
 ## Get the latest version
 
 ```bash
