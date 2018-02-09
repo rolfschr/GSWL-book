@@ -130,10 +130,10 @@ Further dependencies for the ecosystem presented in this book are:
 
 Optional but recommended:
 
-* [tmux](http://tmux.sourceforge.net/)
-* [tmuxinator](https://github.com/tmuxinator/tmuxinator) 
 * [gnuplot](http://www.gnuplot.info/)
 * [tig](https://github.com/jonas/tig)
+* [tmux](http://tmux.sourceforge.net/)
+* [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 ### Linux & BSD ###
 
