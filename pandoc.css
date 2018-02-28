@@ -122,7 +122,7 @@ hr {
 }
 
 pre, code, kbd, samp {
-  color: #000;
+  color: #fff;
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 0.98em;
