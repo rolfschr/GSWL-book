@@ -20,7 +20,7 @@ TMP_EPUB_TITLE=$(TMP_DIR)/epub_title.txt
 TMP_HTML_HEADER=$(TMP_DIR)/html_header.html
 PANDOC_ARGS= --number-sections $(PANDOC_LATEX_ARGS) --toc $(PANDOC_SYNTAX_HIGHLIGHT) -V gitsha=$(GITSHA) #-V title="Getting Started With Ledger"
 PANDOC_PDF_ARGS= --include-before $(TMP_BEFORE_TEX)
-PANDOC_HTML_ARGS= --include-before $(TMP_HTML_HEADER) --standalone
+PANDOC_HTML_ARGS= --include-before $(TMP_HTML_HEADER) --standalone --css pandoc.css
 PANDOC_EPUB_ARGS= $(TMP_EPUB_TITLE)
 
 all: pdf epub slices html
