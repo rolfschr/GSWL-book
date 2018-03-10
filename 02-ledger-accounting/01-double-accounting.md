@@ -126,7 +126,7 @@ I recommend to have at least version 3.0.3 running.
 Further dependencies for the ecosystem presented in this book are:
 
 * [Git](http://git-scm.com/)
-* [Python](https://www.python.org/)
+* [Python 2](https://www.python.org/)
 
 Optional but recommended:
 
