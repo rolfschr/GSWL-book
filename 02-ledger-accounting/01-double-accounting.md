@@ -34,7 +34,7 @@ The level of detail needed for the subcategories ("Expenses" -> "Groceries" -> "
 
 ## Ledger ##
 
-[Ledger](http://ledger-cli.org) is a double-entry accounting command line tool a command line tool created by [John Wiegley](http://newartisans.com/) with a community of active contributors.
+[Ledger](http://ledger-cli.org) is a double-entry accounting command line tool created by [John Wiegley](http://newartisans.com/) with a community of active contributors.
 It is an extremely potent tool and it takes some time and effort to be able to unleash its power.
 However, once mastered there is not much you may miss while doing personal or professional accounting.
 
@@ -165,7 +165,7 @@ $ brew install ledger
 Ledger is hard to get running on Windows (you would probably need to compile it yourself and that's often a pain in the ass on Windows).
 Additionally, the setup presented in this book makes heavy use of the traditional Unix command line infrastructure.
 I therefore recommend to setup VirtualBox and install Ledger on a Linux machine.
-You could either use plain VirtualBox or VirtualBox with Vanguard on top.
+You could either use plain VirtualBox or VirtualBox with Vagrant on top.
 The latter is probably easier & faster.
 It will be totally fine to connect to your virtual machine via SSH in Windows afterwards so you won't need to actually "use" the Linux environment.
 
