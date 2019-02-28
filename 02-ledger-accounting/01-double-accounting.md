@@ -69,7 +69,7 @@ Note that Ledger never modifies your files.
 
 The following transactions illustrate some basic concepts used in double accounting & Ledger:
 
-```
+```{.scheme}
 ; The opening balance sets up your initial financial state.
 ; This is needed as one rarely starts with no money at all.
 ; Your opening balance is the first "transaction" in your journal.
