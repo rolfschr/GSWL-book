@@ -59,4 +59,4 @@ slices: pdf
 	pdftk $(OUTPUT_PDF) cat 18 output $(OUTPUT_NAME)_preview_p18.pdf
 
 clean:
-	rm -rf $(OUTPUT_MD) $(OUTPUT_PDF) $(TMP_DIR)
+	rm -rf $(OUTPUT_MD) $(OUTPUT_PDF) $(TMP_DIR) $(OUTPUT_HTML) $(OUTPUT_EPUB)
