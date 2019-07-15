@@ -69,7 +69,7 @@ Note that Ledger never modifies your files.
 
 The following transactions illustrate some basic concepts used in double accounting & Ledger:
 
-```{.scheme}
+~~~{.scheme}
 ; The opening balance sets up your initial financial state.
 ; This is needed as one rarely starts with no money at all.
 ; Your opening balance is the first "transaction" in your journal.
@@ -112,7 +112,7 @@ The following transactions illustrate some basic concepts used in double account
 2042/02/22 * Shopping
     Expenses:Food:Groceries
     Expenses:Unknown                       -$42.00
-```
+~~~
 
 The above example already introduced some nice concepts from Ledger.
 Still, reading the text file is a bit boring.
