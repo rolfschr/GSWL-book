@@ -35,8 +35,8 @@ pre: before.tex epub_title.txt html_header.html
 	sed -i -e 's/\$$TODAY\$$/$(TODAY)/g' -e 's/\$$GITSHA\$$/$(GITSHA)/g' $(TMP_HTML_HEADER)
 
 md: pre
-	@find *-* -name '*.md' | xargs cat > $(OUTPUT_MD)
-	@python preprocess.py $(OUTPUT_MD)
+	find *-* -name '*.md' | xargs cat > $(OUTPUT_MD)
+	./preprocess.py $(OUTPUT_MD)
 
 pdf: md
 	$(PANDOC_EXEC) $(OUTPUT_MD) $(PANDOC_ARGS) $(PANDOC_PDF_ARGS) -o $(OUTPUT_PDF)
