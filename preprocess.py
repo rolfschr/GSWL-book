@@ -1,4 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+"""
+Preprocess the given markdown input.
+"""
 
 import sys
 import re
@@ -8,32 +11,40 @@ import urllib
 TAB = '    '
 
 
-def catfile(str):
+def catfile(s):
+    """
+    Find all occurences of 'Catfile <filepath>' and replace them by the content
+    of <filepath>.
+    """
     while True:
         try:
-            m = re.finditer('\nCatfile .*\n', str).next()
-            filename = str[m.start() + 9:m.end() - 1]
-            with open(filename, "r") as fh:
+            m = next(re.finditer('\nCatxfile .*\n', s))
+            filepath = s[m.start() + 9:m.end() - 1]
+            with open(filepath, "r") as fh:
                 content = fh.read()
                 content = TAB + content.replace('\n', '\n' + TAB)
                 content = content[:-len(TAB)]  # remove trailing \t
-            str = ''.join([str[:m.start()+1], content, str[m.end():]])
+            s = ''.join([s[:m.start()+1], content, s[m.end():]])
         except StopIteration:
             break
-    return str
+    return s
 
 
-def caturl(str):
+def caturl(s):
+    """
+    Find all occurences of 'Caturl <url>' and replace them by the content
+    of <url>.
+    """
     while True:
         try:
-            m = re.finditer('\nCaturl .*\n', str).next()
-            url = str[m.start() + 8:m.end() - 1]
+            m = next(re.finditer('\nCaturl .*\n', s))
+            url = s[m.start() + 8:m.end() - 1]
             f = urllib.urlopen(url)
             content = f.read()
-            str = ''.join([str[:m.start()+1], content, str[m.end():]])
+            s = ''.join([s[:m.start()+1], content, s[m.end():]])
         except StopIteration:
             break
-    return str
+    return s
 
 
 def preprocess(str):
