@@ -55,7 +55,7 @@ A typical transaction in Ledger looks like this:
 Any transaction starts with a header line containing the date and some meta information (in the case above only a comment describing the transaction).
 The header is then followed by a list of accounts involved in the transaction (one "posting" per line; each line starting with a whitespace).
 Accounts have arbitrary names but Ledger uses the colon to distinguish between subcategories.
-The account name is followed by at least two whitespaces and the amount of money which was added (positive) or removed (negative) from that same account.
+The account name is followed by at least two spaces (or a tab) and the amount of money which was added (positive) or removed (negative) from that same account.
 Actually, Ledger is clever enough to calculate the appropriate amount so it would have been perfectly valid to only write:
 
 ~~~{.scheme}
