@@ -164,29 +164,10 @@ $ brew install ledger
 
 Ledger is hard to get running on Windows (you would probably need to compile it yourself and that's often a pain in the ass on Windows).
 Additionally, the setup presented in this book makes heavy use of the traditional Unix command line infrastructure.
-I therefore recommend to setup VirtualBox and install Ledger on a Linux machine.
-You could either use plain VirtualBox or VirtualBox with Vagrant on top.
-The latter is probably easier & faster.
-It will be totally fine to connect to your virtual machine via SSH in Windows afterwards so you won't need to actually "use" the Linux environment.
-
-Step-by-step Instructions (without Vagrant):
-
-* Download and install [VirtualBox](https://www.virtualbox.org/).
-* Download an ISO of a Linux distribution of your choice ([Ubuntu](http://www.ubuntu.com/desktop)?).
-* Install Linux on the virtual machine.
-* Install the OpenSSH *server* ("``$ sudo apt-get install openssh-server``" for Ubuntu).
-* Make sure you can [access the vm via SSH](http://stackoverflow.com/a/10532299).
-* Run the machine in [headless mode](https://www.virtualbox.org/manual/ch07.html#vboxheadless) if you want.
-* Install [babun](https://github.com/babun/babun) (built on top of [Cygwin](https://www.cygwin.com/)) on your Windows machine.
-* Connect to the vm via SSH.
-* Follow the instructions to install Ledger on Linux.
-
-Step-by-step Instructions (with Vagrant):
-
-* Download and install [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://www.vagrantup.com/).
-* Download this [Vagrantfile](https://github.com/rolfschr/GSWL-ecosystem/blob/master/contrib/Vagrantfile) from Github.
-* Open a terminal, go to the Vagrantfile's location and run ``vagrant up`` (this will setup an Ubuntu machine with Ledger installed).
-* To connect to the VM via SSH, use ``vagrant up`` followed by ``vagrant ssh`` from within the same folder.
+I therefore recommend to run Linux on Windows using WSL (Windows Subsystem for Linux). 
+You can install Linux/Ubuntu by running ``wsl --install`` from PowerShell or Windows Command Prompt in administrator mode.
+Refer to the [WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/) for more details.
+After WSL installation, follow the steps in Linux section for ledger installation.
 
 ## A first teaser ##
 
